@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace AzureServiceBusDemoApp
 {
-    internal class AzureServiceBus : IMessageBus
+    public class AzureServiceBus : IMessageBus
     {
         private readonly ServiceBusSender _serviceBusSender;
 
-        internal AzureServiceBus(ServiceBusSender serviceBusSender)
+        public AzureServiceBus(ServiceBusSender serviceBusSender)
         {
             this._serviceBusSender = serviceBusSender;
         }
